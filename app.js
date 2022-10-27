@@ -28,7 +28,8 @@ label.addEventListener("change", (e) => {
 dob.setAttribute("min", "1989-01-01");
 dob.setAttribute("max", `${year}-${month}-${day}`);
 
-removeImage.addEventListener("click", () => {
+removeImage.addEventListener("click", (e) => {
+  e.preventDefault()
   displayImage.src = "./images/dummy.png";
 });
 
