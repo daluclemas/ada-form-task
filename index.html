@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form Task</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="https://lms.theadaproject.com.ng/adalogo.svg" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-body">
+      <section class="container">
+        <aside class="girl-image">
+          <div class="image-container">
+            <img
+              src="https://miro.medium.com/max/640/1*Hi1nJY4L-PfZRYNkPl-qkw.jpeg"
+              alt="techie-girl-img"
+            />
+
+            <!-- <img
+              src="https://media.istockphoto.com/photos/software-engineers-working-on-project-together-picture-id1048918508?b=1&k=20&m=1048918508&s=170667a&w=0&h=HTET-t1UHk63gf6izdqK7HqZW4quFTNaK88Xc0S6OGs="
+              alt="female-techie"
+            /> -->
+          </div>
+        </aside>
+
+        <article class="form-wrapper">
+          <header class="ada-logo">
+            <div class="logo-container">
+              <img
+                src="https://lms.theadaproject.com.ng/static/media/adalogotext.71ea9e4af22caf6af36fdbbb3e8b7277.svg"
+                alt="ada-logo"
+              />
+            </div>
+          </header>
+
+          <section class="form-contents">
+            <div class="texts-container">
+              <h1 class="signup-form-text">complete profile</h1>
+              <p>Hey Ada! So glad you could join us</p>
+            </div>
+
+            <div class="form-items">
+              <form action="./pages/success.html" target="_blank">
+                <div class="profile-image">
+                  <div class="profile-dp-wrapper">
+                    <img
+                      src="./images/dummy.png"
+                      alt="dummy-img"
+                      class="profile-dp"
+                    />
+                  </div>
+
+                  <div class="dp-btns">
+                    <div class="upload">
+                      <label for="upload-image" class="upload-img"
+                        >upload image</label
+                      >
+                      <input
+                        type="file"
+                        name="upload-image"
+                        id="upload-image"
+                        accept="image/*"
+                        class="dp"
+                      />
+                    </div>
+
+                    <div class="delete">
+                      <div class="delete-btn">
+                        <button>remove</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <section class="form-inputs">
+                  <article class="fullname-dob">
+                    <div class="fullname">
+                      <label for="fullname"> fullname</label>
+                      <input
+                        type="text"
+                        name="fullname"
+                        id="fullname"
+                        placeholder="Enter your name"
+                      />
+                    </div>
+                    <div class="dob">
+                      <label for="dob">date of birth</label>
+                      <input type="date" name="dob" id="dob" class="dob-inpt" />
+                    </div>
+                  </article>
+
+                  <article class="fullname-dob">
+                    <div class="fullname">
+                      <label for="password"> password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Enter your password"
+                      />
+                    </div>
+                    <div class="dob">
+                      <label for="email">email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="email"
+                      />
+                    </div>
+                  </article>
+
+                  <article class="gender-wrapper">
+                    <div class="male">
+                      <label for="male">male:</label>
+                      <input type="radio" name="gender" id="male" />
+                    </div>
+
+                    <div class="female">
+                      <label for="female">female:</label>
+                      <input type="radio" name="gender" id="female" />
+                    </div>
+                  </article>
+
+                  <article class="country-wrapper">
+                    <label for="country">country</label>
+                    <select name="country" id="country" class="country">
+                      <option value="">--select country--</option>
+                    </select>
+                  </article>
+
+                  <article class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <p class="terms">
+                      I agree to the <a href="#">terms &amp; conditions</a>.
+                    </p>
+                  </article>
+
+                  <div class="submit-btn">
+                    <input type="submit" value="submit" />
+                  </div>
+                </section>
+              </form>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
