@@ -43,7 +43,7 @@
             </div>
 
             <div class="form-items">
-              <form action="./pages/success.html" target="_blank">
+              <form class="submit_form">
                 <div class="profile-image">
                   <div class="profile-dp-wrapper">
                     <img
@@ -84,11 +84,21 @@
                         name="fullname"
                         id="fullname"
                         placeholder="Enter your name"
+                        class="full_name_field"
                       />
+                      <p
+                        class="name-error"
+                        style="color: red; font-size: 10px"
+                      ></p>
                     </div>
                     <div class="dob">
                       <label for="dob">date of birth</label>
-                      <input type="date" name="dob" id="dob" class="dob-inpt" />
+                      <input
+                        type="date"
+                        name="dob"
+                        id="dob"
+                        class="dob_field"
+                      />
                     </div>
                   </div>
 
@@ -100,7 +110,12 @@
                         name="password"
                         id="password"
                         placeholder="Enter your password"
+                        class="password_field"
                       />
+                      <p
+                        class="password-error"
+                        style="color: red; font-size: 10px"
+                      ></p>
                     </div>
                     <div class="dob">
                       <label for="email">email</label>
@@ -108,20 +123,34 @@
                         type="email"
                         name="email"
                         id="email"
-                        class="email"
+                        class="email_field"
                       />
+                      <p
+                        class="email-error"
+                        style="color: red; font-size: 10px"
+                      ></p>
                     </div>
                   </div>
 
                   <div class="gender-wrapper">
                     <div class="male">
                       <label for="male">male:</label>
-                      <input type="radio" name="gender" id="male" />
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        class="gender_radio"
+                      />
                     </div>
 
                     <div class="female">
                       <label for="female">female:</label>
-                      <input type="radio" name="gender" id="female" />
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        class="gender_radio"
+                      />
                     </div>
                   </div>
 
@@ -133,7 +162,12 @@
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      id="checkbox"
+                      class="checkbox_field"
+                    />
                     <p class="terms">
                       I agree to the <a href="#">terms &amp; conditions</a>.
                     </p>
